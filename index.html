@@ -1,0 +1,370 @@
+<!-- index.html — Coffee & Plant · Nairobi -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+  <title>Coffee & Plant · Plant‑first kitchen & roastery · Nairobi</title>
+  <meta name="description" content="Award-winning plant-based café in Westlands, Nairobi. Handcrafted mylks, cultured cheezes, sourdough, specialty coffee — rooted in flavour.">
+  <meta property="og:title" content="Coffee & Plant · Plant‑first Kitchen">
+  <meta property="og:description" content="Bold, plant‑forward dishes. Zero compromise.">
+  <meta property="og:image" content="https://images.pexels.com/photos/4054850/pexels-photo-4054850.jpeg">
+  <meta name="theme-color" content="#0f2419">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-ring"></div>
+      <div class="preloader-wordmark">Coffee & Plant</div>
+      <div class="preloader-sub">Westlands · Nairobi</div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-mark"><i class="fas fa-seedling"></i></div>
+        <div>
+          <div class="logo-name">Coffee & Plant</div>
+          <div class="logo-sub">Westlands, Nairobi</div>
+        </div>
+      </a>
+      <nav class="desktop-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Menu</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="contact.html" class="nav-cta">Visit us</a>
+      </nav>
+      <button class="mobile-menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-backdrop"></div>
+    <div class="mobile-menu-panel">
+      <div class="mobile-menu-header">
+        <div class="mobile-logo">Coffee <span>&</span> Plant</div>
+        <button class="mobile-close" id="mobileClose"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="mobile-menu-links">
+        <a href="index.html" class="mobile-link">Home <i class="fas fa-arrow-right"></i></a>
+        <a href="about.html" class="mobile-link">About <i class="fas fa-arrow-right"></i></a>
+        <a href="services.html" class="mobile-link">Menu <i class="fas fa-arrow-right"></i></a>
+        <a href="contact.html" class="mobile-link">Contact <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="mobile-menu-footer">
+        <div class="mobile-footer-info">
+          <p><i class="fas fa-map-pin"></i> General Mathenge Road, Westlands</p>
+          <p><i class="far fa-clock"></i> Daily 6:30am – 9:00pm</p>
+          <p><i class="fab fa-whatsapp"></i> +254 700 000 000</p>
+        </div>
+        <div class="mobile-social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero-home">
+      <div class="hero-bg">
+        <img src="https://images.pexels.com/photos/4054850/pexels-photo-4054850.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2" alt="Plant-based latte with foam art" id="heroImg" loading="eager">
+        <div class="hero-overlay"></div>
+        <div class="hero-grain"></div>
+      </div>
+      <div class="hero-content container">
+        <div class="hero-eyebrow">
+          <span class="dot"></span>
+          Open daily · 6:30am – 9pm
+        </div>
+        <h1 class="hero-title">
+          Rooted<br>in <em class="gold-word">flavour.</em>
+        </h1>
+        <p class="hero-desc">Plant‑first kitchen & specialty roastery.<br>General Mathenge Road, Westlands.</p>
+        <div class="hero-actions">
+          <a href="services.html" class="btn btn-secondary">
+            <span>Explore the menu</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="contact.html" class="btn btn-outline-light">Find us</a>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <div class="scroll-track"></div>
+        <span class="scroll-label">Scroll</span>
+      </div>
+    </section>
+
+    <!-- FEATURES STRIP -->
+    <section class="features-strip">
+      <div class="features-inner">
+        <div class="feature-item" data-anim>
+          <div class="feature-icon-wrap"><i class="fas fa-flask"></i></div>
+          <div class="feature-text">
+            <h3>Small batch</h3>
+            <p>Cultured and crafted in‑house every morning — never scaled, never rushed.</p>
+          </div>
+        </div>
+        <div class="feature-item" data-anim>
+          <div class="feature-icon-wrap"><i class="fas fa-seedling"></i></div>
+          <div class="feature-text">
+            <h3>100% plants</h3>
+            <p>Whole oats, cashews, seeds. No fillers, no gums, no shortcuts.</p>
+          </div>
+        </div>
+        <div class="feature-item" data-anim>
+          <div class="feature-icon-wrap"><i class="fas fa-mug-hot"></i></div>
+          <div class="feature-text">
+            <h3>Specialty coffee</h3>
+            <p>Ethically sourced from East Africa, roasted on‑site every week.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGNATURE / PODS SHOWCASE -->
+    <section class="showcase-section section-pad">
+      <div class="container">
+        <div class="showcase-header">
+          <span class="section-label">Our signature</span>
+          <h2>The POD MYLK range</h2>
+          <p>Cultured. Creamy. Completely plant‑based.</p>
+        </div>
+        <div class="pods-grid" id="podsGrid">
+          <div class="pod-card" data-anim>
+            <div class="pod-img">
+              <img src="https://images.pexels.com/photos/3727257/pexels-photo-3727257.jpeg?auto=compress&cs=tinysrgb&w=600&h=750&dpr=2" alt="Oat mylk in glass" loading="lazy">
+              <div class="pod-img-overlay"></div>
+            </div>
+            <div class="pod-content">
+              <span class="pod-tag">🌾 Oats</span>
+              <div class="pod-name">Oat Mylk</div>
+              <div class="pod-desc">Oats, filtered water, vanilla, sea salt</div>
+              <div class="pod-price">Ksh 350 · 500ml</div>
+            </div>
+          </div>
+          <div class="pod-card" data-anim>
+            <div class="pod-img">
+              <img src="https://images.pexels.com/photos/5946720/pexels-photo-5946720.jpeg?auto=compress&cs=tinysrgb&w=600&h=750&dpr=2" alt="Almond mylk" loading="lazy">
+              <div class="pod-img-overlay"></div>
+            </div>
+            <div class="pod-content">
+              <span class="pod-tag">🌰 Almonds</span>
+              <div class="pod-name">Almond Mylk</div>
+              <div class="pod-desc">Almonds, filtered water, dates, vanilla</div>
+              <div class="pod-price">Ksh 550 · 500ml</div>
+            </div>
+          </div>
+          <div class="pod-card" data-anim>
+            <div class="pod-img">
+              <img src="https://images.pexels.com/photos/4109787/pexels-photo-4109787.jpeg?auto=compress&cs=tinysrgb&w=600&h=750&dpr=2" alt="Soft cashew cheeze" loading="lazy">
+              <div class="pod-img-overlay"></div>
+            </div>
+            <div class="pod-content">
+              <span class="pod-tag">🧀 Cultured</span>
+              <div class="pod-name">Soft Cheeze</div>
+              <div class="pod-desc">Fermented cashew, coconut oil, sea salt</div>
+              <div class="pod-price">Ksh 550 · 200g</div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; margin-top:48px;">
+          <a href="services.html" class="btn btn-outline">View all products <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAN FAVOURITES HORIZONTAL -->
+    <section class="fan-section section-pad">
+      <div class="section-header container">
+        <span class="section-label">Fan favourites</span>
+        <h2>What everyone's ordering</h2>
+      </div>
+      <div class="fan-scroll-wrap" id="fanScroll">
+        <div class="fan-track" id="fanTrack">
+          <div class="fan-card">
+            <div class="fan-card-badge">Bestseller</div>
+            <div class="fan-card-name">Za'atar Croissant</div>
+            <div class="fan-card-desc">Poached eggs, cashew cheeze, chilli oil, fresh herbs</div>
+            <div class="fan-card-footer">
+              <span class="fan-card-price">Ksh 1,400</span>
+              <a href="contact.html" class="fan-order-btn" title="Order"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="fan-card">
+            <div class="fan-card-badge">🌱 Vegan</div>
+            <div class="fan-card-name">Anti‑Inflammatory Beet</div>
+            <div class="fan-card-desc">Berry, beetroot, ginger, orange, turmeric</div>
+            <div class="fan-card-footer">
+              <span class="fan-card-price">Ksh 750</span>
+              <a href="contact.html" class="fan-order-btn"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="fan-card">
+            <div class="fan-card-badge">Sourdough</div>
+            <div class="fan-card-name">Margherita Pizza</div>
+            <div class="fan-card-desc">Tomato, mozzarella, basil, garlic confit</div>
+            <div class="fan-card-footer">
+              <span class="fan-card-price">Ksh 1,200</span>
+              <a href="contact.html" class="fan-order-btn"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="fan-card">
+            <div class="fan-card-badge">🌾 Gluten-free</div>
+            <div class="fan-card-name">Moroccan Bowl</div>
+            <div class="fan-card-desc">Quinoa, chickpeas, pickled eggplant, green tahini</div>
+            <div class="fan-card-footer">
+              <span class="fan-card-price">Ksh 1,450</span>
+              <a href="contact.html" class="fan-order-btn"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="fan-card">
+            <div class="fan-card-badge">Cultured</div>
+            <div class="fan-card-name">Smoked Paprika Cheeze</div>
+            <div class="fan-card-desc">200g fermented cashew, smoked paprika rub</div>
+            <div class="fan-card-footer">
+              <span class="fan-card-price">Ksh 850</span>
+              <a href="contact.html" class="fan-order-btn"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="fan-card">
+            <div class="fan-card-badge">Breakfast</div>
+            <div class="fan-card-name">Turkish Eggs</div>
+            <div class="fan-card-desc">Pita, poached eggs, za'atar, herbed ricotta</div>
+            <div class="fan-card-footer">
+              <span class="fan-card-price">Ksh 1,400</span>
+              <a href="contact.html" class="fan-order-btn"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY TEASER SPLIT -->
+    <section class="story-teaser-section">
+      <div class="story-split">
+        <div class="story-image-col" data-anim>
+          <img src="https://images.pexels.com/photos/4552985/pexels-photo-4552985.jpeg?auto=compress&cs=tinysrgb&w=900&h=900&dpr=2" alt="Avocado toast on sourdough" loading="lazy">
+        </div>
+        <div class="story-text-col">
+          <span class="section-label">Our philosophy</span>
+          <div class="story-quote" data-anim>
+            "Butter, but make it <span>cashew."</span>
+          </div>
+          <p class="story-body" data-anim>
+            We ferment and culture everything in‑house — from oat mylks to aged cheezes. The result is creamy, tangy, and completely dairy‑free. Real flavour can't be rushed; ours is cultured for up to 24 hours.
+          </p>
+          <div class="story-stats-row" data-anim>
+            <div class="story-stat">
+              <div class="story-stat-num">2022</div>
+              <div class="story-stat-label">Founded</div>
+            </div>
+            <div class="story-stat">
+              <div class="story-stat-num">25+</div>
+              <div class="story-stat-label">Menu items</div>
+            </div>
+            <div class="story-stat">
+              <div class="story-stat-num">100%</div>
+              <div class="story-stat-label">Plant‑based</div>
+            </div>
+          </div>
+          <a href="about.html" class="btn btn-secondary" data-anim>
+            Our story <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-inner" data-anim>
+          <div class="cta-text">
+            <h3>Ready to taste the difference?</h3>
+            <p>Visit us on General Mathenge Road or order ahead on WhatsApp.</p>
+          </div>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn-secondary">Get directions</a>
+            <a href="services.html" class="btn btn-outline-light">View full menu</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <div class="footer-logo-mark"><i class="fas fa-seedling"></i></div>
+            <span class="footer-logo-text">Coffee & Plant</span>
+          </a>
+          <p class="footer-tagline">Plant‑first kitchen & specialty roastery in the heart of Westlands, Nairobi.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Visit</h5>
+          <ul>
+            <li><i class="fas fa-map-pin"></i> General Mathenge Rd, Westlands</li>
+            <li><i class="far fa-clock"></i> Daily 6:30am – 9:00pm</li>
+            <li><i class="fas fa-phone"></i> +254 700 000 000</li>
+            <li><i class="fas fa-envelope"></i> hello@coffeeandplant.co.ke</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Stay in the loop</h5>
+          <p style="font-size:13px; color:rgba(245,240,232,0.45); margin-bottom:16px; line-height:1.6;">New menu drops and seasonal specials — straight to your inbox.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Your email" required aria-label="Email">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">© 2025 Coffee & Plant. All rights reserved.</p>
+        <p class="signature">Crafted with precision by <a href="https://dw33py.netlify.app" target="_blank" rel="noopener">Dw33pY</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING BUTTONS -->
+  <a href="#" class="wa-float" id="waFloat" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="wa-tooltip">Chat with us</span>
+  </a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

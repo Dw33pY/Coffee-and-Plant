@@ -1,0 +1,272 @@
+<!-- about.html — Coffee & Plant -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>About · Coffee & Plant · Our Story</title>
+  <meta name="description" content="From a home kitchen and a blender to Nairobi's first plant-based mylk bar. Meet the people and principles behind Coffee & Plant.">
+  <meta property="og:title" content="Our Story · Coffee & Plant">
+  <meta property="og:description" content="Cultured, crafted, plant‑first since 2022.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-ring"></div>
+      <div class="preloader-wordmark">Coffee & Plant</div>
+      <div class="preloader-sub">Westlands · Nairobi</div>
+    </div>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-mark"><i class="fas fa-seedling"></i></div>
+        <div>
+          <div class="logo-name">Coffee & Plant</div>
+          <div class="logo-sub">Westlands, Nairobi</div>
+        </div>
+      </a>
+      <nav class="desktop-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="services.html" class="nav-link">Menu</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="contact.html" class="nav-cta">Visit us</a>
+      </nav>
+      <button class="mobile-menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-backdrop"></div>
+    <div class="mobile-menu-panel">
+      <div class="mobile-menu-header">
+        <div class="mobile-logo">Coffee <span>&</span> Plant</div>
+        <button class="mobile-close" id="mobileClose"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="mobile-menu-links">
+        <a href="index.html" class="mobile-link">Home <i class="fas fa-arrow-right"></i></a>
+        <a href="about.html" class="mobile-link">About <i class="fas fa-arrow-right"></i></a>
+        <a href="services.html" class="mobile-link">Menu <i class="fas fa-arrow-right"></i></a>
+        <a href="contact.html" class="mobile-link">Contact <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="mobile-menu-footer">
+        <div class="mobile-footer-info">
+          <p><i class="fas fa-map-pin"></i> General Mathenge Road, Westlands</p>
+          <p><i class="far fa-clock"></i> Daily 6:30am – 9:00pm</p>
+        </div>
+        <div class="mobile-social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="page-hero-bg">
+        <img src="https://images.pexels.com/photos/4057755/pexels-photo-4057755.jpeg?auto=compress&cs=tinysrgb&w=1920&h=600&dpr=2" alt="Kitchen preparation" loading="eager">
+        <div class="page-hero-overlay"></div>
+      </div>
+      <div class="container page-hero-content">
+        <div class="hero-eyebrow">
+          <span class="dot"></span>
+          Since 2022
+        </div>
+        <h1>Our roots</h1>
+        <p>From a home kitchen experiment to Nairobi's first plant‑based mylk bar</p>
+      </div>
+    </section>
+
+    <!-- OUR STORY -->
+    <section class="about-story">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-text" data-anim>
+            <span class="section-label">Our journey</span>
+            <h2>Started with a blender and a belief.</h2>
+            <p class="lead">Coffee & Plant was born from a simple conviction: plant‑based food should be bold, creamy, and never a compromise.</p>
+            <p>What began as homemade almond mylk for friends quickly grew into a movement. Our founder spent months perfecting fermentation techniques, culturing the first batches of cashew butter in a tiny Westlands apartment kitchen.</p>
+            <p>Today, we operate a full plant‑forward kitchen, specialty coffee roastery, and mylk bar. Every item — from cultured butter to soft cheezes — is made in small batches, because real flavour can't be rushed.</p>
+            <div class="stats-row">
+              <div class="stat-block">
+                <span class="stat-num">2022</span>
+                <span class="stat-lbl">Established</span>
+              </div>
+              <div class="stat-block">
+                <span class="stat-num">25+</span>
+                <span class="stat-lbl">Menu items</span>
+              </div>
+              <div class="stat-block">
+                <span class="stat-num">100%</span>
+                <span class="stat-lbl">Plant‑based</span>
+              </div>
+            </div>
+          </div>
+          <div class="story-image-wrap" data-anim>
+            <img src="https://images.pexels.com/photos/4057755/pexels-photo-4057755.jpeg?auto=compress&cs=tinysrgb&w=700&h=900&dpr=2" alt="Our kitchen" loading="lazy">
+            <div class="story-img-tag">Small batch · Big flavour</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="values-section">
+      <div class="container">
+        <div class="section-header" data-anim>
+          <span class="section-label">What we stand for</span>
+          <h2>Three principles guide everything we do</h2>
+        </div>
+        <div class="values-grid">
+          <div class="value-card" data-anim>
+            <div class="value-icon"><i class="fas fa-seedling"></i></div>
+            <h3>Whole plants</h3>
+            <p>No fillers, no gums, no artificial anything. Just oats, nuts, seeds, and cultures — exactly as nature intended, handled with precision.</p>
+          </div>
+          <div class="value-card" data-anim>
+            <div class="value-icon"><i class="fas fa-flask"></i></div>
+            <h3>Fermentation first</h3>
+            <p>We culture our cheezes and butter for 12–24 hours, developing depth, tang, and complexity that simply can't be faked or rushed.</p>
+          </div>
+          <div class="value-card" data-anim>
+            <div class="value-icon"><i class="fas fa-mug-hot"></i></div>
+            <h3>Specialty coffee</h3>
+            <p>Ethically sourced from East African cooperatives, roasted small‑batch in‑house every week to ensure you taste the peak of the crop.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="team-section">
+      <div class="container">
+        <div class="section-header" data-anim>
+          <span class="section-label">The makers</span>
+          <h2>Meet the people behind the plants</h2>
+        </div>
+        <div class="team-grid">
+          <div class="team-card" data-anim>
+            <div class="team-img">
+              <img src="https://images.pexels.com/photos/3775534/pexels-photo-3775534.jpeg?auto=compress&cs=tinysrgb&w=400&h=500&dpr=2" alt="Wanjiku Mwangi" loading="lazy">
+              <div class="team-img-overlay"></div>
+            </div>
+            <div class="team-info">
+              <h4>Wanjiku Mwangi</h4>
+              <p class="team-role">Head of Fermentation</p>
+              <p class="team-bio">Trained in traditional artisan cheese-making, Wanjiku brings meticulous old‑world techniques to our plant‑based kitchen.</p>
+            </div>
+          </div>
+          <div class="team-card" data-anim>
+            <div class="team-img">
+              <img src="https://images.pexels.com/photos/3811759/pexels-photo-3811759.jpeg?auto=compress&cs=tinysrgb&w=400&h=500&dpr=2" alt="David Odhiambo" loading="lazy">
+              <div class="team-img-overlay"></div>
+            </div>
+            <div class="team-info">
+              <h4>David Odhiambo</h4>
+              <p class="team-role">Head Roaster & Barista</p>
+              <p class="team-bio">With eight years in specialty coffee, David ensures every bag of beans and every shot pulled is genuinely exceptional.</p>
+            </div>
+          </div>
+          <div class="team-card" data-anim>
+            <div class="team-img">
+              <img src="https://images.pexels.com/photos/3796810/pexels-photo-3796810.jpeg?auto=compress&cs=tinysrgb&w=400&h=500&dpr=2" alt="Amina Hassan" loading="lazy">
+              <div class="team-img-overlay"></div>
+            </div>
+            <div class="team-info">
+              <h4>Amina Hassan</h4>
+              <p class="team-role">Pastry Chef</p>
+              <p class="team-bio">Amina creates our legendary za'atar croissants and seasonal desserts — all fully plant‑based and genuinely extraordinary.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-inner" data-anim>
+          <div class="cta-text">
+            <h3>Come say hello.</h3>
+            <p>Visit us on General Mathenge Road and taste the difference for yourself.</p>
+          </div>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn-secondary">Find us <i class="fas fa-arrow-right"></i></a>
+            <a href="services.html" class="btn btn-outline-light">View menu</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <div class="footer-logo-mark"><i class="fas fa-seedling"></i></div>
+            <span class="footer-logo-text">Coffee & Plant</span>
+          </a>
+          <p class="footer-tagline">Plant‑first kitchen & specialty roastery in the heart of Westlands, Nairobi.</p>
+          <div class="footer-socials">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Visit</h5>
+          <ul>
+            <li><i class="fas fa-map-pin"></i> General Mathenge Rd, Westlands</li>
+            <li><i class="far fa-clock"></i> Daily 6:30am – 9:00pm</li>
+            <li><i class="fas fa-phone"></i> +254 700 000 000</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Newsletter</h5>
+          <p style="font-size:13px; color:rgba(245,240,232,0.45); margin-bottom:16px;">New menu drops, straight to your inbox.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">© 2025 Coffee & Plant. All rights reserved.</p>
+        <p class="signature">Crafted with precision by <a href="https://dw33py.netlify.app" target="_blank" rel="noopener">Dw33pY</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="wa-float" id="waFloat" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="wa-tooltip">Chat with us</span>
+  </a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

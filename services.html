@@ -1,0 +1,196 @@
+<!-- services.html — Coffee & Plant · Full Menu -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Menu · Coffee & Plant · Bowls, Pizza, Mylks & More</title>
+  <meta name="description" content="Full plant‑based menu — sourdough pizza, Buddha bowls, specialty coffee, POD mylks, cultured cheezes and more. Open daily in Westlands, Nairobi.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-ring"></div>
+      <div class="preloader-wordmark">Coffee & Plant</div>
+      <div class="preloader-sub">Westlands · Nairobi</div>
+    </div>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-mark"><i class="fas fa-seedling"></i></div>
+        <div>
+          <div class="logo-name">Coffee & Plant</div>
+          <div class="logo-sub">Westlands, Nairobi</div>
+        </div>
+      </a>
+      <nav class="desktop-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link active">Menu</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="contact.html" class="nav-cta">Visit us</a>
+      </nav>
+      <button class="mobile-menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-backdrop"></div>
+    <div class="mobile-menu-panel">
+      <div class="mobile-menu-header">
+        <div class="mobile-logo">Coffee <span>&</span> Plant</div>
+        <button class="mobile-close" id="mobileClose"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="mobile-menu-links">
+        <a href="index.html" class="mobile-link">Home <i class="fas fa-arrow-right"></i></a>
+        <a href="about.html" class="mobile-link">About <i class="fas fa-arrow-right"></i></a>
+        <a href="services.html" class="mobile-link">Menu <i class="fas fa-arrow-right"></i></a>
+        <a href="contact.html" class="mobile-link">Contact <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="mobile-menu-footer">
+        <div class="mobile-footer-info">
+          <p><i class="fas fa-map-pin"></i> General Mathenge Road, Westlands</p>
+          <p><i class="far fa-clock"></i> Daily 6:30am – 9:00pm</p>
+        </div>
+        <div class="mobile-social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="page-hero-bg">
+        <img src="https://images.pexels.com/photos/4054850/pexels-photo-4054850.jpeg?auto=compress&cs=tinysrgb&w=1920&h=600&dpr=2" alt="Plant-based food" loading="eager">
+        <div class="page-hero-overlay"></div>
+      </div>
+      <div class="container page-hero-content">
+        <div class="hero-eyebrow"><span class="dot"></span> Open daily</div>
+        <h1>Full menu</h1>
+        <p>Everything we make — mylks, bowls, pizzas, breakfast & more</p>
+      </div>
+    </section>
+
+    <!-- FILTERS -->
+    <div class="filter-section" id="filterSection">
+      <div class="container">
+        <div class="filter-top">
+          <h3>Filter by category</h3>
+          <button class="filter-reset" id="filterReset">Reset</button>
+        </div>
+        <div class="filter-pills" id="filterContainer">
+          <button class="filter-btn active" data-filter="all">All items</button>
+          <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+          <button class="filter-btn" data-filter="bowls">Bowls</button>
+          <button class="filter-btn" data-filter="sandwiches">Sandwiches</button>
+          <button class="filter-btn" data-filter="pizza">Pizza</button>
+          <button class="filter-btn" data-filter="pasta">Pasta</button>
+          <button class="filter-btn" data-filter="pancakes">Pancakes</button>
+          <button class="filter-btn" data-filter="smallbites">Small Bites</button>
+          <button class="filter-btn" data-filter="drinks">Drinks</button>
+          <button class="filter-btn" data-filter="plantbased">Mylks & Cheeze</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MENU GRID -->
+    <section class="menu-section">
+      <div class="container">
+        <div id="menuGrid" class="menu-grid"></div>
+        <div id="noResults" class="no-results" style="display:none;">
+          <i class="fas fa-leaf"></i>
+          <p>Nothing here — try a different category</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" style="padding-top:0;">
+      <div class="container">
+        <div class="cta-inner">
+          <div class="cta-text">
+            <h3>Ready to order?</h3>
+            <p>Message us on WhatsApp or visit us in Westlands.</p>
+          </div>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn-secondary">
+              <i class="fab fa-whatsapp"></i> Order on WhatsApp
+            </a>
+            <a href="contact.html" class="btn btn-outline-light">Get directions</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <div class="footer-logo-mark"><i class="fas fa-seedling"></i></div>
+            <span class="footer-logo-text">Coffee & Plant</span>
+          </a>
+          <p class="footer-tagline">Plant‑first kitchen & specialty roastery.</p>
+          <div class="footer-socials">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Hours</h5>
+          <ul>
+            <li><i class="far fa-clock"></i> Mon – Sun, 6:30am – 9pm</li>
+            <li><i class="fas fa-map-pin"></i> Westlands, Nairobi</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Newsletter</h5>
+          <p style="font-size:13px; color:rgba(245,240,232,0.45); margin-bottom:16px;">New menu drops, straight to your inbox.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">© 2025 Coffee & Plant. All rights reserved.</p>
+        <p class="signature">Crafted with precision by <a href="https://dw33py.netlify.app" target="_blank" rel="noopener">Dw33pY</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="wa-float" id="waFloat" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="wa-tooltip">Chat with us</span>
+  </a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
