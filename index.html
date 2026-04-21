@@ -3,26 +3,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
   <title>Coffee & Plant · Plant‑first kitchen & roastery · Nairobi</title>
   <meta name="description" content="Award-winning plant-based café in Westlands, Nairobi. Handcrafted mylks, cultured cheezes, sourdough, specialty coffee — rooted in flavour.">
   <meta property="og:title" content="Coffee & Plant · Plant‑first Kitchen">
   <meta property="og:description" content="Bold, plant‑forward dishes. Zero compromise.">
-  <meta property="og:image" content="https://images.pexels.com/photos/4054850/pexels-photo-4054850.jpeg">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200&h=630&fit=crop">
   <meta name="theme-color" content="#0f2419">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
 
+  <!-- CURSOR FOLLOWER (desktop only) -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
   <!-- PRELOADER -->
   <div id="preloader">
-    <div class="preloader-inner">
-      <div class="preloader-ring"></div>
-      <div class="preloader-wordmark">Coffee & Plant</div>
-      <div class="preloader-sub">Westlands · Nairobi</div>
+    <div class="pl-panel pl-panel-l"></div>
+    <div class="pl-panel pl-panel-r"></div>
+    <div class="pl-grain"></div>
+    <div class="pl-center">
+      <div class="pl-ring-wrap">
+        <svg viewBox="0 0 120 120" class="pl-svg">
+          <circle cx="60" cy="60" r="52" class="pl-track"/>
+          <circle cx="60" cy="60" r="52" class="pl-fill" id="plFill"/>
+        </svg>
+        <div class="pl-count">
+          <span class="pl-num" id="plNum">0</span>
+          <span class="pl-pct">%</span>
+        </div>
+      </div>
+      <div class="pl-line"><div class="pl-line-fill" id="plLine"></div></div>
+      <div class="pl-brand" id="plBrand">Coffee &amp; Plant</div>
+      <div class="pl-loc">Westlands · Nairobi</div>
     </div>
   </div>
 
@@ -70,9 +87,9 @@
           <p><i class="fab fa-whatsapp"></i> +254 700 000 000</p>
         </div>
         <div class="mobile-social">
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
     </div>
@@ -82,7 +99,13 @@
     <!-- HERO -->
     <section class="hero-home">
       <div class="hero-bg">
-        <img src="https://images.pexels.com/photos/4054850/pexels-photo-4054850.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2" alt="Plant-based latte with foam art" id="heroImg" loading="eager">
+        <img
+          src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1920&h=1080&fit=crop&q=80"
+          alt="Coffee and plant-based latte art"
+          id="heroImg"
+          width="1920" height="1080"
+          loading="eager"
+        >
         <div class="hero-overlay"></div>
         <div class="hero-grain"></div>
       </div>
@@ -136,18 +159,46 @@
       </div>
     </section>
 
+    <!-- MARQUEE TICKER -->
+    <div class="marquee-strip">
+      <div class="marquee-track">
+        <span>Oat Mylk</span><span class="marquee-sep">✦</span>
+        <span>Cultured Cheeze</span><span class="marquee-sep">✦</span>
+        <span>Sourdough</span><span class="marquee-sep">✦</span>
+        <span>Specialty Coffee</span><span class="marquee-sep">✦</span>
+        <span>Buddha Bowls</span><span class="marquee-sep">✦</span>
+        <span>Za'atar Croissant</span><span class="marquee-sep">✦</span>
+        <span>Cashew Butter</span><span class="marquee-sep">✦</span>
+        <span>Fermented 24hrs</span><span class="marquee-sep">✦</span>
+        <span>Oat Mylk</span><span class="marquee-sep">✦</span>
+        <span>Cultured Cheeze</span><span class="marquee-sep">✦</span>
+        <span>Sourdough</span><span class="marquee-sep">✦</span>
+        <span>Specialty Coffee</span><span class="marquee-sep">✦</span>
+        <span>Buddha Bowls</span><span class="marquee-sep">✦</span>
+        <span>Za'atar Croissant</span><span class="marquee-sep">✦</span>
+        <span>Cashew Butter</span><span class="marquee-sep">✦</span>
+        <span>Fermented 24hrs</span><span class="marquee-sep">✦</span>
+      </div>
+    </div>
+
     <!-- SIGNATURE / PODS SHOWCASE -->
     <section class="showcase-section section-pad">
       <div class="container">
-        <div class="showcase-header">
+        <div class="showcase-header" data-anim>
           <span class="section-label">Our signature</span>
           <h2>The POD MYLK range</h2>
           <p>Cultured. Creamy. Completely plant‑based.</p>
         </div>
         <div class="pods-grid" id="podsGrid">
-          <div class="pod-card" data-anim>
+          <div class="pod-card">
             <div class="pod-img">
-              <img src="https://images.pexels.com/photos/3727257/pexels-photo-3727257.jpeg?auto=compress&cs=tinysrgb&w=600&h=750&dpr=2" alt="Oat mylk in glass" loading="lazy">
+              <img
+                src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=600&h=750&fit=crop&q=80"
+                alt="Oat milk poured into a glass"
+                width="600" height="750"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='https://picsum.photos/seed/oatmylk42/600/750'"
+              >
               <div class="pod-img-overlay"></div>
             </div>
             <div class="pod-content">
@@ -157,9 +208,15 @@
               <div class="pod-price">Ksh 350 · 500ml</div>
             </div>
           </div>
-          <div class="pod-card" data-anim>
+          <div class="pod-card">
             <div class="pod-img">
-              <img src="https://images.pexels.com/photos/5946720/pexels-photo-5946720.jpeg?auto=compress&cs=tinysrgb&w=600&h=750&dpr=2" alt="Almond mylk" loading="lazy">
+              <img
+                src="https://images.unsplash.com/photo-1508061253366-f7da158b6d46?w=600&h=750&fit=crop&q=80"
+                alt="Almonds scattered on a surface"
+                width="600" height="750"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='https://picsum.photos/seed/almondmilk88/600/750'"
+              >
               <div class="pod-img-overlay"></div>
             </div>
             <div class="pod-content">
@@ -169,9 +226,15 @@
               <div class="pod-price">Ksh 550 · 500ml</div>
             </div>
           </div>
-          <div class="pod-card" data-anim>
+          <div class="pod-card">
             <div class="pod-img">
-              <img src="https://images.pexels.com/photos/4109787/pexels-photo-4109787.jpeg?auto=compress&cs=tinysrgb&w=600&h=750&dpr=2" alt="Soft cashew cheeze" loading="lazy">
+              <img
+                src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=600&h=750&fit=crop&q=80"
+                alt="Artisan cheese platter"
+                width="600" height="750"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='https://picsum.photos/seed/vegancheese77/600/750'"
+              >
               <div class="pod-img-overlay"></div>
             </div>
             <div class="pod-content">
@@ -182,7 +245,7 @@
             </div>
           </div>
         </div>
-        <div style="text-align:center; margin-top:48px;">
+        <div style="text-align:center; margin-top:48px;" data-anim>
           <a href="services.html" class="btn btn-outline">View all products <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
@@ -190,13 +253,16 @@
 
     <!-- FAN FAVOURITES HORIZONTAL -->
     <section class="fan-section section-pad">
-      <div class="section-header container">
+      <div class="section-header container" data-anim>
         <span class="section-label">Fan favourites</span>
         <h2>What everyone's ordering</h2>
       </div>
       <div class="fan-scroll-wrap" id="fanScroll">
         <div class="fan-track" id="fanTrack">
           <div class="fan-card">
+            <div class="fan-card-img">
+              <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=300&fit=crop&q=80" alt="Croissant" loading="lazy" onerror="this.onerror=null;this.src='https://picsum.photos/seed/croissant1/400/300'">
+            </div>
             <div class="fan-card-badge">Bestseller</div>
             <div class="fan-card-name">Za'atar Croissant</div>
             <div class="fan-card-desc">Poached eggs, cashew cheeze, chilli oil, fresh herbs</div>
@@ -206,6 +272,9 @@
             </div>
           </div>
           <div class="fan-card">
+            <div class="fan-card-img">
+              <img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=400&h=300&fit=crop&q=80" alt="Smoothie bowl" loading="lazy" onerror="this.onerror=null;this.src='https://picsum.photos/seed/smoothie2/400/300'">
+            </div>
             <div class="fan-card-badge">🌱 Vegan</div>
             <div class="fan-card-name">Anti‑Inflammatory Beet</div>
             <div class="fan-card-desc">Berry, beetroot, ginger, orange, turmeric</div>
@@ -215,6 +284,9 @@
             </div>
           </div>
           <div class="fan-card">
+            <div class="fan-card-img">
+              <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop&q=80" alt="Pizza" loading="lazy" onerror="this.onerror=null;this.src='https://picsum.photos/seed/pizza3/400/300'">
+            </div>
             <div class="fan-card-badge">Sourdough</div>
             <div class="fan-card-name">Margherita Pizza</div>
             <div class="fan-card-desc">Tomato, mozzarella, basil, garlic confit</div>
@@ -224,6 +296,9 @@
             </div>
           </div>
           <div class="fan-card">
+            <div class="fan-card-img">
+              <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop&q=80" alt="Buddha bowl" loading="lazy" onerror="this.onerror=null;this.src='https://picsum.photos/seed/bowl4/400/300'">
+            </div>
             <div class="fan-card-badge">🌾 Gluten-free</div>
             <div class="fan-card-name">Moroccan Bowl</div>
             <div class="fan-card-desc">Quinoa, chickpeas, pickled eggplant, green tahini</div>
@@ -233,6 +308,9 @@
             </div>
           </div>
           <div class="fan-card">
+            <div class="fan-card-img">
+              <img src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=400&h=300&fit=crop&q=80" alt="Cheese" loading="lazy" onerror="this.onerror=null;this.src='https://picsum.photos/seed/cheese5/400/300'">
+            </div>
             <div class="fan-card-badge">Cultured</div>
             <div class="fan-card-name">Smoked Paprika Cheeze</div>
             <div class="fan-card-desc">200g fermented cashew, smoked paprika rub</div>
@@ -242,6 +320,9 @@
             </div>
           </div>
           <div class="fan-card">
+            <div class="fan-card-img">
+              <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400&h=300&fit=crop&q=80" alt="Turkish eggs" loading="lazy" onerror="this.onerror=null;this.src='https://picsum.photos/seed/eggs6/400/300'">
+            </div>
             <div class="fan-card-badge">Breakfast</div>
             <div class="fan-card-name">Turkish Eggs</div>
             <div class="fan-card-desc">Pita, poached eggs, za'atar, herbed ricotta</div>
@@ -258,7 +339,13 @@
     <section class="story-teaser-section">
       <div class="story-split">
         <div class="story-image-col" data-anim>
-          <img src="https://images.pexels.com/photos/4552985/pexels-photo-4552985.jpeg?auto=compress&cs=tinysrgb&w=900&h=900&dpr=2" alt="Avocado toast on sourdough" loading="lazy">
+          <img
+            src="https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=900&h=900&fit=crop&q=80"
+            alt="Avocado toast on artisan bread"
+            width="900" height="900"
+            loading="lazy"
+            onerror="this.onerror=null;this.src='https://picsum.photos/seed/avotoast99/900/900'"
+          >
         </div>
         <div class="story-text-col">
           <span class="section-label">Our philosophy</span>
@@ -342,7 +429,7 @@
         </div>
         <div class="footer-col">
           <h5>Stay in the loop</h5>
-          <p style="font-size:13px; color:rgba(245,240,232,0.45); margin-bottom:16px; line-height:1.6;">New menu drops and seasonal specials — straight to your inbox.</p>
+          <p class="footer-newsletter-desc">New menu drops and seasonal specials — straight to your inbox.</p>
           <form class="newsletter-form" id="newsletterForm">
             <input type="email" placeholder="Your email" required aria-label="Email">
             <button type="submit">Subscribe</button>
@@ -364,6 +451,9 @@
   <button class="back-to-top" id="backToTop" aria-label="Back to top">
     <i class="fas fa-arrow-up"></i>
   </button>
+
+  <!-- TOAST CONTAINER -->
+  <div class="toast-container" id="toastContainer"></div>
 
   <script src="js/script.js"></script>
 </body>

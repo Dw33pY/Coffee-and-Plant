@@ -1,25 +1,39 @@
-<!-- about.html — Coffee & Plant -->
+<!-- about.html — Coffee & Plant · Our Story -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
   <title>About · Coffee & Plant · Our Story</title>
   <meta name="description" content="From a home kitchen and a blender to Nairobi's first plant-based mylk bar. Meet the people and principles behind Coffee & Plant.">
   <meta property="og:title" content="Our Story · Coffee & Plant">
   <meta property="og:description" content="Cultured, crafted, plant‑first since 2022.">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
 
+  <!-- PRELOADER -->
   <div id="preloader">
-    <div class="preloader-inner">
-      <div class="preloader-ring"></div>
-      <div class="preloader-wordmark">Coffee & Plant</div>
-      <div class="preloader-sub">Westlands · Nairobi</div>
+    <div class="pl-panel pl-panel-l"></div>
+    <div class="pl-panel pl-panel-r"></div>
+    <div class="pl-grain"></div>
+    <div class="pl-center">
+      <div class="pl-ring-wrap">
+        <svg viewBox="0 0 120 120" class="pl-svg">
+          <circle cx="60" cy="60" r="52" class="pl-track"/>
+          <circle cx="60" cy="60" r="52" class="pl-fill" id="plFill"/>
+        </svg>
+        <div class="pl-count">
+          <span class="pl-num" id="plNum">0</span>
+          <span class="pl-pct">%</span>
+        </div>
+      </div>
+      <div class="pl-line"><div class="pl-line-fill" id="plLine"></div></div>
+      <div class="pl-brand" id="plBrand">Coffee &amp; Plant</div>
+      <div class="pl-loc">Westlands · Nairobi</div>
     </div>
   </div>
 
@@ -73,23 +87,24 @@
   </div>
 
   <main>
-    <!-- PAGE HERO -->
     <section class="page-hero">
       <div class="page-hero-bg">
-        <img src="https://images.pexels.com/photos/4057755/pexels-photo-4057755.jpeg?auto=compress&cs=tinysrgb&w=1920&h=600&dpr=2" alt="Kitchen preparation" loading="eager">
+        <img
+          src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1920&h=600&fit=crop&q=80"
+          alt="Modern kitchen preparation"
+          width="1920" height="600"
+          loading="eager"
+          onerror="this.onerror=null;this.src='https://picsum.photos/seed/kitchenpage/1920/600'"
+        >
         <div class="page-hero-overlay"></div>
       </div>
       <div class="container page-hero-content">
-        <div class="hero-eyebrow">
-          <span class="dot"></span>
-          Since 2022
-        </div>
+        <div class="hero-eyebrow"><span class="dot"></span> Since 2022</div>
         <h1>Our roots</h1>
         <p>From a home kitchen experiment to Nairobi's first plant‑based mylk bar</p>
       </div>
     </section>
 
-    <!-- OUR STORY -->
     <section class="about-story">
       <div class="container">
         <div class="story-grid">
@@ -115,14 +130,19 @@
             </div>
           </div>
           <div class="story-image-wrap" data-anim>
-            <img src="https://images.pexels.com/photos/4057755/pexels-photo-4057755.jpeg?auto=compress&cs=tinysrgb&w=700&h=900&dpr=2" alt="Our kitchen" loading="lazy">
+            <img
+              src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&h=900&fit=crop&q=80"
+              alt="Our kitchen space"
+              width="700" height="900"
+              loading="lazy"
+              onerror="this.onerror=null;this.src='https://picsum.photos/seed/ourkitchen/700/900'"
+            >
             <div class="story-img-tag">Small batch · Big flavour</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- VALUES -->
     <section class="values-section">
       <div class="container">
         <div class="section-header" data-anim>
@@ -149,7 +169,6 @@
       </div>
     </section>
 
-    <!-- TEAM -->
     <section class="team-section">
       <div class="container">
         <div class="section-header" data-anim>
@@ -159,7 +178,13 @@
         <div class="team-grid">
           <div class="team-card" data-anim>
             <div class="team-img">
-              <img src="https://images.pexels.com/photos/3775534/pexels-photo-3775534.jpeg?auto=compress&cs=tinysrgb&w=400&h=500&dpr=2" alt="Wanjiku Mwangi" loading="lazy">
+              <img
+                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=500&fit=crop&q=80"
+                alt="Wanjiku Mwangi"
+                width="400" height="500"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='https://picsum.photos/seed/chef1/400/500'"
+              >
               <div class="team-img-overlay"></div>
             </div>
             <div class="team-info">
@@ -170,7 +195,13 @@
           </div>
           <div class="team-card" data-anim>
             <div class="team-img">
-              <img src="https://images.pexels.com/photos/3811759/pexels-photo-3811759.jpeg?auto=compress&cs=tinysrgb&w=400&h=500&dpr=2" alt="David Odhiambo" loading="lazy">
+              <img
+                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop&q=80"
+                alt="David Odhiambo"
+                width="400" height="500"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='https://picsum.photos/seed/roaster2/400/500'"
+              >
               <div class="team-img-overlay"></div>
             </div>
             <div class="team-info">
@@ -181,7 +212,13 @@
           </div>
           <div class="team-card" data-anim>
             <div class="team-img">
-              <img src="https://images.pexels.com/photos/3796810/pexels-photo-3796810.jpeg?auto=compress&cs=tinysrgb&w=400&h=500&dpr=2" alt="Amina Hassan" loading="lazy">
+              <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop&q=80"
+                alt="Amina Hassan"
+                width="400" height="500"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='https://picsum.photos/seed/pastry3/400/500'"
+              >
               <div class="team-img-overlay"></div>
             </div>
             <div class="team-info">
@@ -194,7 +231,6 @@
       </div>
     </section>
 
-    <!-- CTA -->
     <section class="cta-section">
       <div class="container">
         <div class="cta-inner" data-anim>
@@ -245,7 +281,7 @@
         </div>
         <div class="footer-col">
           <h5>Newsletter</h5>
-          <p style="font-size:13px; color:rgba(245,240,232,0.45); margin-bottom:16px;">New menu drops, straight to your inbox.</p>
+          <p class="footer-newsletter-desc">New menu drops, straight to your inbox.</p>
           <form class="newsletter-form" id="newsletterForm">
             <input type="email" placeholder="Your email" required>
             <button type="submit">Subscribe</button>
@@ -266,6 +302,7 @@
   <button class="back-to-top" id="backToTop" aria-label="Back to top">
     <i class="fas fa-arrow-up"></i>
   </button>
+  <div class="toast-container" id="toastContainer"></div>
 
   <script src="js/script.js"></script>
 </body>
